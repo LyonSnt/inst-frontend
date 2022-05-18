@@ -1,0 +1,18 @@
+<div class="lyon-tarjeta" *ngIf="dato" routerLink="/panel/user/{{dato.id}}">
+  <div class="lyon-tarjeta__imagen">
+    <img src="{{dato.avatar}}" alt="">
+  </div>
+  <div class="lyon-tarjeta__informacion">
+    <h2>{{dato.nombre}}</h2>
+    <h4>Edad: {{dato.edad}}</h4>
+    <p>Genero:
+<ng-container [ngSwitch]="dato.genero"> 
+<span *ngSwitchCase="'F'">Femenino</span>
+<span *ngSwitchCase="'M'">Masculino</span>
+<span *ngSwitchDefault="">S/N</span>
+</ng-container>
+    </p>
+    <p>{{dato.descripcion}}</p>
+    <p *ngIf="dato.trabaja">{{dato.trabaja}}</p>
+  </div>
+</div>

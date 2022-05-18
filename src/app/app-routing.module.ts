@@ -5,7 +5,29 @@ import { EstructuraComponent } from '@layout/estructura/estructura.component';
 const routes: Routes = [
   {
     path: '',
-    component: EstructuraComponent //esta parte es para que se visualice lo que esta en estructura en el app component
+    redirectTo: '/panel/user', // es para que redireccione directamente de form exacta
+    pathMatch: 'full'
+  },
+  {
+    path: 'panel',
+    component: EstructuraComponent, //esta parte es para que se visualice lo que esta en estructura en el app component
+    children: [
+      {
+        path: 'user',
+        loadChildren: ()=> //esto hace que se cargue la informacion como se vaya necesitando
+        import('@modules/user/user.module').then( (m) => m.UserModule) //carga todos los modulos cuando esten ya listas
+      },
+      {
+        path: '**', // toda esta parte es para que cuando se ponga una ruta que no exista nos redirija a panel user
+        redirectTo: '/panel/user', //hay que poner a la vista que tiene que ir por defecto
+        pathMatch: 'full'
+      }
+    ]
+  },
+  {
+    path: '**', // toda esta parte es para que cuando se ponga una ruta que no exista nos redirija a panel user
+    redirectTo: '/panel/user', //hay que poner a la vista que tiene que ir por defecto
+    pathMatch: 'full'
   }
 ];
 

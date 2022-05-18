@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-12">
+    <app-titulo-h1 tipo="warning" texto="Lista de usuarios de h1 componente"></app-titulo-h1>
+  </div>
+    <app-tarjeta-user [dato]="usuario" *ngFor="let usuario of usuarios2" class="col-12 col-md-6 col-xl-3"></app-tarjeta-user>
+
+</div>
+
+<!-- <div class="container-fluid px-0">
+  <div class="row bg-dark h-100">
+      <div class="col-12 px-0">
+          <app-carousel [items]="carouselData"></app-carousel>
+      </div>
+  </div>
+</div> -->

@@ -1,0 +1,70 @@
+{
+  "usuariosB": [
+    {
+      "id": 1,
+      "nombre": "Leonel",
+      "edad": "21",
+      "descripcion": "desarollador frontend CON ANY",
+      "avatar": "https://e7.pngegg.com/pngimages/84/165/png-clipart-united-states-avatar-organization-information-user-avatar-service-computer-wallpaper.png",
+      "trabaja": "En la casa",
+      "genero": "M"
+    },
+    {
+      "id": 2,
+      "nombre": "Juan Males",
+      "edad": "22",
+      "descripcion": "desarollador backend",
+      "avatar": "https://e7.pngegg.com/pngimages/84/165/png-clipart-united-states-avatar-organization-information-user-avatar-service-computer-wallpaper.png",
+      "trabaja": "Scopus", 
+      "genero": "M"
+    },
+    {
+      "id": 3,
+      "nombre": "Pedro Ruiz",
+      "edad": "28",
+      "descripcion": "Diseñador",
+      "avatar": "https://e7.pngegg.com/pngimages/84/165/png-clipart-united-states-avatar-organization-information-user-avatar-service-computer-wallpaper.png",
+      "genero": ""
+    },
+    {
+      "id": 4,
+      "nombre": "Luis",
+      "edad": "27",
+      "descripcion": "Juagador",
+      "avatar": "https://e7.pngegg.com/pngimages/84/165/png-clipart-united-states-avatar-organization-information-user-avatar-service-computer-wallpaper.png",
+      "genero": ""
+    },
+    {
+      "id": 5,
+      "nombre": "Alez",
+      "edad": "45",
+      "descripcion": "Programador",
+      "avatar": "https://e7.pngegg.com/pngimages/84/165/png-clipart-united-states-avatar-organization-information-user-avatar-service-computer-wallpaper.png",
+      "genero": "M"
+    },
+    {
+      "id": 6,
+      "nombre": "maria",
+      "edad": "89",
+      "descripcion": "Admin base de edatos",
+      "avatar": "https://e7.pngegg.com/pngimages/84/165/png-clipart-united-states-avatar-organization-information-user-avatar-service-computer-wallpaper.png",
+      "genero": ""
+    },
+    {
+      "id": 7,
+      "nombre": "Sandra",
+      "edad": "12",
+      "descripcion": "Producto owner",
+      "avatar": "https://e7.pngegg.com/pngimages/84/165/png-clipart-united-states-avatar-organization-information-user-avatar-service-computer-wallpaper.png",
+      "genero": "F"
+    },
+    {
+      "id": 8,
+      "nombre": "Carmen",
+      "edad": "78",
+      "descripcion": "Team",
+      "avatar": "https://e7.pngegg.com/pngimages/84/165/png-clipart-united-states-avatar-organization-information-user-avatar-service-computer-wallpaper.png",
+      "genero": "f"
+    }
+  ]
+}

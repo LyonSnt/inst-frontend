@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -13,7 +14,8 @@ import * as fromComponents from './components';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    CommonModule
+    CommonModule,
+    RouterModule //AGREGADO EL 16-05-2022, sirve para que funcione el routerLink
   ],
   declarations: [...fromComponents.components],  //TRAE TODOS LOS COMPONENTES
 
@@ -22,6 +24,7 @@ import * as fromComponents from './components';
     ReactiveFormsModule,
     HttpClientModule,
     CommonModule,
+    RouterModule, //AGREGADO EL 16-05-2022, sirve para que funcione el routerLink
     ...fromComponents.components
   ]
 })
