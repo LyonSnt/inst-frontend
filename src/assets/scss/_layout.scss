@@ -1,6 +1,6 @@
 @import './themes';
 
-.dsc {
+.lyon {
     &-main-container, &-main-container-full {
         display: grid;
         grid-template-columns: 200px auto;
@@ -8,7 +8,7 @@
         height: 100vh;
         min-height: 500px;
     }
-    
+
     &-main-container-full {
         grid-template-columns: 0 auto;
     }
@@ -17,7 +17,7 @@
         box-shadow: 1px 1px 6px 0px rgba(0,0,0,0.5);
         z-index: 1;
     }
-    
+
 }
 
 @each $name, $theme in $themes {
@@ -27,7 +27,7 @@
 }
 
 @media(max-width: 768px) {
-    .dsc {
+    .lyon {
         &-main-container {
             grid-template-columns: 0px auto;
         }

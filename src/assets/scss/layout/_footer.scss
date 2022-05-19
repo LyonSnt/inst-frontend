@@ -1,8 +1,8 @@
 @import '../variables.scss';
 
 @mixin create-footer($name, $theme) {
-    .dsc-#{$name}{
-        .dsc-footer {
+    .lyon-#{$name}{
+        .lyon-footer {
             grid-column: 2;
             grid-row: 3;
             display: flex;
@@ -15,12 +15,12 @@
             color: map-get($map: $theme, $key: 'light');
             &-text {
                 font-weight: 400;
-                margin-right: 0.5rem;
-                font-size: 0.9rem;
+                margin-right: 0.2rem;
+                font-size: 0.6rem;
             }
             &__socials {
                 &-social {
-                    font-size: 1.25rem;
+                    font-size: 1rem;
                     margin: 0 0.35rem
                 }
             }

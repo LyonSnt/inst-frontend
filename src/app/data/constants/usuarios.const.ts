@@ -1,4 +1,4 @@
-import { ITarjetaUser } from '@shared/components/tarjetas/tarjeta-user/itarjeta-user.metadata';
+/* import { ITarjetaUser } from '@shared/components/tarjetas/tarjeta-user/itarjeta-user.metadata';
 
 export const USUARIOS_DATO: ITarjetaUser[] = [
   {
@@ -58,4 +58,4 @@ export const USUARIOS_DATO: ITarjetaUser[] = [
     descripcion: 'desarollador',
     avatar: 'https://e7.pngegg.com/pngimages/84/165/png-clipart-united-states-avatar-organization-information-user-avatar-service-computer-wallpaper.png'
   },
-];
+]; */

@@ -5,8 +5,13 @@ import { EstructuraComponent } from '@layout/estructura/estructura.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/panel/user', // es para que redireccione directamente de form exacta
+    redirectTo: '/auth/login', // es para que redireccione directamente de form exacta
     pathMatch: 'full'
+  },
+  {
+    path: 'auth', //esta parte es para redireccionar al login
+    loadChildren: () =>
+    import('@modules/auth/auth.module').then((m) => m.AuthModule)
   },
   {
     path: 'panel',
@@ -16,17 +21,17 @@ const routes: Routes = [
         path: 'user',
         loadChildren: ()=> //esto hace que se cargue la informacion como se vaya necesitando
         import('@modules/user/user.module').then( (m) => m.UserModule) //carga todos los modulos cuando esten ya listas
-      },
+      }/* ,
       {
         path: '**', // toda esta parte es para que cuando se ponga una ruta que no exista nos redirija a panel user
         redirectTo: '/panel/user', //hay que poner a la vista que tiene que ir por defecto
         pathMatch: 'full'
-      }
+      } */
     ]
   },
   {
     path: '**', // toda esta parte es para que cuando se ponga una ruta que no exista nos redirija a panel user
-    redirectTo: '/panel/user', //hay que poner a la vista que tiene que ir por defecto
+    redirectTo: '/auth/login', //hay que poner a la vista que tiene que ir por defecto
     pathMatch: 'full'
   }
 ];

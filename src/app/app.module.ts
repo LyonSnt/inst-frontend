@@ -9,13 +9,19 @@ import { LocationStrategy, PathLocationStrategy } from '@angular/common';
 import { EstructuraComponent } from './layout/estructura/estructura.component';
 import { NavigationComponent } from './layout/navigation/navigation.component';
 import { FooterComponent } from './layout/footer/footer.component';
+import { HeaderComponent } from './layout/header/header.component';
+import { LeftNavComponent } from './layout/left-nav/left-nav.component';
+import { LeftNavMenuComponent } from './layout/left-nav/left-nav-menu/left-nav-menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EstructuraComponent,
     NavigationComponent,
-    FooterComponent
+    FooterComponent,
+    HeaderComponent,
+    LeftNavComponent,
+    LeftNavMenuComponent
   ],
   imports: [
     BrowserModule,

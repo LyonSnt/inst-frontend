@@ -1,8 +1,8 @@
 @import '../variables.scss';
 
-@mixin create-left-nav($name, $theme) { 
-    .dsc-#{$name} {
-        .dsc-left-nav {
+@mixin create-left-nav($name, $theme) {
+    .lyon-#{$name} {
+        .lyon-left-nav {
             grid-column: 1;
             grid-row: 1/4;
             background: map-get($map: $theme, $key: 'primary');
@@ -16,8 +16,8 @@
                 text-align: center;
                 border-bottom: map-get($map: $theme, $key: 'border_primary');
                 &__avatar {
-                    height: 120px;
-                    width: 120px;
+                    height: 90px;
+                    width: 90px;
                     margin: 0.5rem auto;
                     border-radius: 100%;
                     box-shadow: map-get($map: $theme, $key: 'shadow');
@@ -27,10 +27,12 @@
                     border-bottom: map-get($map: $theme, $key: 'border_secondary');
                 }
                 &__name {
+                  font-size: 0.7rem; //agregado el 18-05-2022, para que sea haga pequeño
                     color: map-get($map: $theme, $key: 'light');
                     margin-bottom: 0.15rem;
                 }
                 &__position {
+                  font-size: 0.6rem; //agregado el 18-05-2022, para que sea haga pequeño
                     color: map-get($map: $theme, $key: 'light');
                     font-weight: 400;
                 }
@@ -41,6 +43,7 @@
                 padding: 0.5rem 0;
                 &__title {
                     color: map-get($map: $theme, $key: 'secondary');
+                    font-size: 0.9rem; //agregado el 18-05-2022, para que sea haga pequeño
                     text-align: left;
                     margin-left: 0.5rem;
                     font-weight: 700;
@@ -51,7 +54,7 @@
                         width: 100%;
                         color: map-get($map: $theme, $key: 'light');
                         list-style: none;
-                        font-size: 1rem;
+                        font-size: 0.8rem;
                         padding: 0.4rem 0.1rem 0.4rem 0.5rem;
                         transition: 0.5s all ease-in-out;
                         opacity: 0.7;
@@ -71,8 +74,8 @@
     }
 
     @media(max-width: 768px) {
-        .dsc-#{$name} {
-            .dsc-left-nav {
+        .lyon-#{$name} {
+            .lyon-left-nav {
                 position: fixed;
                 width: 250px;
                 min-height: 500px;

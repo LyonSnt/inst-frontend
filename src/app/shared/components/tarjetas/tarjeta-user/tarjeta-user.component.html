@@ -3,14 +3,14 @@
     <img src="{{dato.avatar}}" alt="">
   </div>
   <div class="lyon-tarjeta__informacion">
-    <h2>{{dato.nombre}}</h2>
-    <h4>Edad: {{dato.edad}}</h4>
+    <h4>{{dato.nombre}}</h4>
+    <h5>Edad: {{dato.edad}}</h5>
     <p>Genero:
-<ng-container [ngSwitch]="dato.genero"> 
-<span *ngSwitchCase="'F'">Femenino</span>
-<span *ngSwitchCase="'M'">Masculino</span>
-<span *ngSwitchDefault="">S/N</span>
-</ng-container>
+      <ng-container [ngSwitch]="dato.genero">
+        <span *ngSwitchCase="'F'">Femenino</span>
+        <span *ngSwitchCase="'M'">Masculino</span>
+        <span *ngSwitchDefault="">S/N</span>
+      </ng-container>
     </p>
     <p>{{dato.descripcion}}</p>
     <p *ngIf="dato.trabaja">{{dato.trabaja}}</p>
